@@ -45,4 +45,6 @@ import { FooterContentComponent } from './news/components/footer-content/footer-
   providers: [LogoApiService, NewsApiService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}
