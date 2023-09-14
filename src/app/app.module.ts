@@ -18,12 +18,14 @@ import { MainContentComponent } from './news/components/main-content/main-conten
 import { NavComponent } from './news/components/nav/nav.component';
 import {LogoApiService} from "./shared/services/logo-api.service";
 import {NewsApiService} from "./news/services/news-api.service";
+import { FooterContentComponent } from './news/components/footer-content/footer-content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainContentComponent,
-    NavComponent
+    NavComponent,
+    FooterContentComponent
   ],
   imports: [
     BrowserModule,
