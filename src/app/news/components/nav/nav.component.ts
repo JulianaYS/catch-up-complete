@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {NewsApiService} from "../../services/news-api.service";
 import {LogoApiService} from "../../../shared/services/logo-api.service";
+import {SourceEntity} from "../../model/source.entity";
+import {ArticleEntity} from "../../model/article.entity";
 
 
 @Component({
@@ -9,8 +11,8 @@ import {LogoApiService} from "../../../shared/services/logo-api.service";
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
-  sources: Array<any> = [];
-  articles: Array<any> = [];
+  sources: Array<SourceEntity> = [];
+  articles: Array<ArticleEntity> = [];
 
   constructor(private newsApi: NewsApiService,
               private logoApi: LogoApiService) {
