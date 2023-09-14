@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-main-content',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class MainContentComponent {
   title = 'catch-up';
-  @Input() articles: Array<Article> = [];
+  @Input() articles: Array<any> = [];
 }
